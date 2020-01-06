@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name_sdk">GoodsSDK</string>
+
+    <string name="g_net_error">网络访问错误，请稍后再试</string>
+    <string name="g_empty">还没有数据哦</string>
+    <string name="g_loading">请稍后...</string>
+    <string name="g_reload">重新尝试</string>
+    <string name="g_no_net">网络不可用,请检查你的网络</string>
+    <string name="g_no_data">空数据</string>
+    <string name="g_title_activity_message">MessageActivity</string>
+</resources>

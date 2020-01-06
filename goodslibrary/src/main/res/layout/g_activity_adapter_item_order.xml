@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_goods_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/g_bg_goods_def"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/iv_goods_img"
+            android:textColor="@color/g_main_text_color"
+            android:textSize="@dimen/font_text_size_14"
+            tools:text="goods_name"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_goods_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="¥599.00"
+            android:textColor="@color/g_red"
+            android:textSize="@dimen/font_text_size_14"
+            android:layout_toEndOf="@+id/iv_goods_img"
+            android:layout_below="@+id/tv_goods_name"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_goods_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_goods_name"
+            tools:text="x1"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_goods_price"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

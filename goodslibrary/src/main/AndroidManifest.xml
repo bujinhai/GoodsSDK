@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jinshu.goodslibrary">
+
+    <application
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.jinshu.goodslibrary.utils.facp.AcpActivity" />
+
+        <activity android:name=".ui.activity.OrderActivity" />
+        <activity android:name=".ui.activity.GoodsDetailActivity" />
+        <activity android:name=".ui.activity.OrderPaymentActivity" />
+        <activity android:name=".ui.activity.HotGoodsActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+    </application>
+
+</manifest>

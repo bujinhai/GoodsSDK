@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/g_main_text_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/g_white"/>
+
+    <include layout="@layout/g_layout_titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.jinshu.goodslibrary.widget.GSlideRecyclerView
+            android:id="@+id/irc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/g_white"
+            app:loadMoreEnabled="false"
+            app:refreshEnabled="true"
+            app:refreshHeaderLayout="@layout/g_layout_irecyclerview_classic_refresh_header" />
+
+        <com.jinshu.goodslibrary.widget.GLoadingTip
+            android:id="@+id/loadedTip"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/g_line_color"/>
+
+    <LinearLayout
+        android:id="@+id/ll_all_select"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/g_white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_all_select"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/g_unselect" />
+
+        <TextView
+            android:id="@+id/tv_goods_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/g_main_text_color"
+            android:textSize="@dimen/font_text_size_16"
+            tools:text="已选(1)" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计："
+            android:textColor="@color/g_main_text_color"
+            android:textSize="@dimen/font_text_size_16" />
+
+        <TextView
+            android:id="@+id/tv_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥00.00"
+            android:textColor="@color/g_red"
+            android:textSize="@dimen/font_text_size_16"
+            android:layout_marginEnd="20dp"/>
+
+        <Button
+            android:id="@+id/btn_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/g_red"
+            android:text="去结算"
+            android:textColor="@color/g_white"
+            android:textSize="@dimen/font_text_size_18"/>
+
+    </LinearLayout>
+
+</LinearLayout>
