@@ -75,5 +75,5 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
     //设置sdk依赖
-    api 'com.github.bujinhai:SettingSDK:1.0.4'
+    implementation 'com.github.bujinhai:SettingSDK:1.0.4'
 }
