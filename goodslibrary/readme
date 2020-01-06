@@ -6,7 +6,7 @@
     minSdkVersion 21
 1.导入方式：
     在build.gradle添加依赖
-    implementation 'com.github.bujinhai:GoodsSDK:1.0.0'
+    implementation 'com.github.bujinhai:GoodsSDK:v1.0.1'
 2.在Application中初始化sdk
     GBaseSdk.init(new GBuilder(this).setSiteID(AppConstant.SITE_ID)
                 .setApplicationID(AppConstant.APPLICATION_ID).build());

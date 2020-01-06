@@ -15,7 +15,7 @@ import retrofit2.HttpException;
 
 /**
  * des:订阅封装
- * Created by xsf
+ * Created by bll
  * on 2016.09.10:16
  */
 

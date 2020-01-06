@@ -4,8 +4,6 @@ import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.RelativeSizeSpan;
 
-import com.jinshu.goodslibrary.baseapp.GBaseSdk;
-
 import java.text.DecimalFormat;
 
 /**
@@ -36,14 +34,4 @@ public class StrUtils {
         return spannableString;
     }
 
-    /**
-     * 将sp值转换为px值，保证文字大小不变
-     *
-     * @param spValue （DisplayMetrics类中属性scaledDensity）
-     * @return
-     */
-    private static int sp2px(float spValue) {
-        final float fontScale = GBaseSdk.getAppContext().getResources().getDisplayMetrics().scaledDensity;
-        return (int) (spValue * fontScale + 0.5f);
-    }
 }

@@ -64,6 +64,8 @@ public class RecommendGoodsView extends LinearLayout {
         View view = LayoutInflater.from(context).inflate(R.layout.g_recommend_goods_view, this);
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
         llMore = view.findViewById(R.id.ll_more_goods);
+        recyclerView.setHasFixedSize(true);
+        recyclerView.setNestedScrollingEnabled(false);
         mAdapter = new RecommendGoodsAdapter(context, R.layout.g_fragment_adapter_item_goods);
         recyclerView.setLayoutManager(new GridLayoutManager(context, 2));
         recyclerView.setAdapter(mAdapter);

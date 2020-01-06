@@ -12,7 +12,7 @@ import io.reactivex.functions.Consumer;
 
 /**
  * 用于管理单个presenter的RxBus的事件和Rxjava相关代码的生命周期处理
- * Created by xsf
+ * Created by bll
  * on 2016.08.14:50
  */
 public class GRxManager {
