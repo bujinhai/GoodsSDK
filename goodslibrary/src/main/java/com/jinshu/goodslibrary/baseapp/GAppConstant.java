@@ -26,7 +26,7 @@ public class GAppConstant {
     public static final String WECHAT_PAYWAY_ID = "8a2f462a6e6ca03c016e7c48632f1cda";
     public static final String ALIPAY_PAYWAY_ID = "8a2f462a6e6ca03c016e7c4988f01cdd";
 
-    public static final String WE_CHAT_APP_ID = "wxd752bcd0f0444cbd";
+    public static final String WE_CHAT_APP_ID = "wxf0055ac4a54db382";
     public static final String WE_CHAT_APP_SECRET = "";
 
     public static final String MEMBER_ORDER_ID = "MEMBER_ORDER_ID";

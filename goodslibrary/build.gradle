@@ -68,6 +68,7 @@ dependencies {
     //轮播图
     implementation 'com.youth.banner:banner:1.4.10'
     //glide加载图片框架
+    //noinspection GradleDependency
     implementation 'com.github.bumptech.glide:glide:4.8.0'
     //支付宝接入
     implementation(name: 'alipaySdk-15.6.8-20191021122514', ext: 'aar')

@@ -35,6 +35,7 @@ public class FastPay {
         return new FastPay(activity);
     }
 
+    //支付宝
     public void aliPay(String memberPaymentID, String memberOrderID) {
         GApi.getDefault(GHostType.BASE_URL)
                 .getAppAliPayBody(MasterUtils.addSessionID(), GAppConstant.ALIPAY_PAYWAY_ID, memberPaymentID, memberOrderID, body)
@@ -55,6 +56,7 @@ public class FastPay {
                 });
     }
 
+    //微信
     public void wechatPay(String memberPaymentID, String memberOrderID) {
         final IWXAPI iwxapi = LatteWeChat.getInstance().getWXAPI();
         iwxapi.registerApp(GAppConstant.WE_CHAT_APP_ID);
